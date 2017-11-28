@@ -1,1 +1,6 @@
-
+header {
+    text-align: center;
+}
+.rpsimage {
+   background-image: url("rpsimage");
+}
