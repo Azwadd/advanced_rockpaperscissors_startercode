@@ -1,6 +1,65 @@
-header {
+html {
+    background-color: orange;
+}
+#header {
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    background-color: orange;
+}
+.color {
+    background-color: orange;
+    width: 100%;
+}
+.item1 {
+    text-align: right;
+    font-weight: bold;
+}
+.item2 {
+    text-align: center;
+    font-weight: bold;
+}
+.item3{
+    text-align: left;
+    font-weight: bold;
+}
+.rock {
+    height: 100px;
+    width: 160px;
+    float: right;
+}
+.paper {
+    height: 100px;
+    width: 160px;
+    margin-left: 100px;
+}
+.scissors {
+    height: 100px;
+    width: 160px;
+    float: left;
+    background-color: white;
+}
+.space {
+    padding-top: 20px;
+}
+.name {
+    padding-left: 40px;
+}
+.won {
+    padding-top: 50px;
     text-align: center;
 }
-.rpsimage {
-   background-image: url("rpsimage");
+.img {
+    height: 200px;
+    width: 400px;
+}
+.image {
+    height: 200px;
+    width: 400px;
+}
+.words {
+    text-align: right;
+}
+.results {
+    margin-top: 20px;
 }
