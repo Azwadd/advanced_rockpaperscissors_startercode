@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
-
 <body class="color">
   <h1 id="header">The RPS Game</h1>
   <div class="container">
@@ -31,7 +30,7 @@
             <p>Fill in your Name and Submit!</p>
           </li>
           <li>
-            <p>Then either click the Rock, Paper or Scissors images!</p>
+            <p>Then either type in Rock, Paper or Scissors and Submit!</p>
           </li>
           <li>
             <p>Good Luck agaisnt the Computer!</p>
@@ -43,50 +42,56 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-4"></div>
-      <div class="col-lg-4">
-        <form class="name">
-          <input type="text" name="user" placeholder="Name">
-          <button>Submit</button>  
+      <div class="col-lg-2"></div>
+      <div class="col-lg-4 value1">
+        <form class="names">
+          <input type="text" id="name" placeholder="Name">
+          <button id="nameVal">Submit</button>
         </form>
         </div>
-      <div class="col-lg-4"></div>
+      <div class="col-lg-4 value2">
+        <form class="names">
+          <input type="text" id="userValue" placeholder="Rock Or Paper Or Scissors">
+          <button id="submitValue">Submit</button> 
+        </form>
+        </div>
+      <div class="col-lg-2"></div>
     </div>
     <div class= "row">
       <div class="col-lg-4 item1">
-        <p>Press Rock</p>
+        <p>Pick Rock</p>
       </div>
       <div class="col-lg-4 item2">
-        <p>Press Paper</p>
+        <p>Pick Paper</p>
       </div>
       <div class="col-lg-4 item3">
-        <p>Press Scissors</p>
+        <p>Pick Scissors</p>
       </div>
     </div>
     <div class= "row">
-      <div class="col-lg-4 button1">
-        <input type="image" src="rock.jpg" id="rock" class="button rock"> 
+      <div class="col-lg-4">
+        <img src="rock.jpg" class="rock"> 
       </div>
-      <div class="col-lg-4 button2">
-        <input type="image" src="paper.jpg" id="paper" class="button paper">
+      <div class="col-lg-4">
+        <img src="paper.jpg" class="paper">
       </div>
-      <div class="col-lg-4 button3">
-        <input type="image" src="scissor.png" id="scissors" class="button scissors">
+      <div class="col-lg-4">
+        <img src="scissor.png" class="scissors">
       </div>
     </div>
     <div class="row space">
       <div class="col-lg-4 words">
-      <p>User's Choice</p>
-      <p class="choices"></p>
-        <p class="results">User Won ... Times</p>
+      <p id="nameValue">User's Choice</p>
+      <p id="uchoices"> </p>
+        <p id="results">User Won ... Times</p>
       </div>
-      <div class="col-lg-4 won">
-        <p>... Won</p>
+      <div class="col-lg-4">
+        <p id="won"> </p>
       </div>
       <div class="col-lg-4">
         <p>Computer's Choice</p>
-        <p class="choice">...</p>
-        <p class="results">Computer Won ... Times</p>
+        <p id="cchoice"> </p>
+        <p id="results">Computer Won ... Times</p>
       </div>
       
     </div>
@@ -99,7 +104,6 @@
         5. Add divs to record User Choice and Computer Choice.
         6. Add a div to record the Winner.
      -->
-  </div>
 </body>
 
 </html>

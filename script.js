@@ -19,46 +19,59 @@
 //****************** SERIOUSLY TEST USING console.log()!!! ******************
 
 //GLOBAL VARIABLES
-var userChoice = "";
-var computerChoice = "";
-var winner = "";
 var choices = ["rock" , "paper" , "scissors"];
-console.log(userChoice);
+var computerNumber = Math.floor(Math.random() * 3);
+var computerChoice = choices[computerNumber];
+var winner = "";
 console.log(computerChoice);
 console.log(winner);
 console.log(choices);
-
 //FUNCTIONS
-$(document).ready(function() {
-        console.log("Document ready");
-        $("#rock").click(function() {
-                $(".choices").text("Picked Rock");
-        });
-        $("#paper").click(function() {
-                $(".choices").text("Picked Paper");      
-        });
-        $("#scissors").click(function() {
-                $(".choices").text("Picked Scissors");  
-        });
-        Math.random(0, 1 , 2);
-        var rock = 0;
-        var paper = 1;
-        var scissors = 2;
-        if (number = 0) {
-                $(".choice").text("Picked Rock");
-        } else if (number = 1) {
-                $(".choice").text("Picked Paper");
-        } else if (number = 2) {
-                $(".choice").text("Picked Scissors");
-        }
-});
-$(document).ready(function() {
-        
-        
-});
-
-
-
 
 // DOCUMENT READY FUNCTION
-
+$(document).ready(function() {
+        $("#nameVal").click(function(e){
+                e.preventDefault();
+                var userName = $("#name").val();
+                console.log(userName);
+                $("#nameValue").text(userName);
+                console.log(userChoice, "user choice")
+        });
+        $("#submitValue").click(function(e){
+                e.preventDefault();
+                var userChoice = $("#userValue").val();
+                if (computerChoice === userChoice){
+                        $("#uchoices").text(userChoice);
+                        $("#cchoice").text(computerChoice);
+                        $("#won").text("It's a tie");
+                } else if (computerChoice === "rock" && userChoice === "scissors"){
+                        $("#uchoices").text("Scissors");
+                        $("#cchoice").text("Rock");
+                        $("#won").text("You Lost!");
+                } else if (computerChoice === "rock" && userChoice === "paper"){
+                        $("#uchoices").text("Paper");
+                        $("#cchoice").text("Rock");
+                        $("#won").text("You Won!");
+                } else if (computerChoice === "paper" && userChoice === "scissors"){
+                        $("#uchoices").text(userChoice);
+                        $("#cchoice").text(computerChoice);
+                        $("#won").text("You Won!");
+                } else if (computerChoice === "paper" && userChoice === "rock"){
+                        $("#uchoices").text(userChoice);
+                        $("#cchoice").text(computerChoice);
+                        $("#won").text("You Lost");
+                } else if (computerChoice === "scissors" && userChoice === "paper"){
+                        $("#uchoices").text(userChoice);
+                        $("#cchoice").text(computerChoice);
+                        $("#won").text("You Lost");
+                } else if (computerChoice === "scissors" && userChoice === "rock"){
+                        $("#uchoices").text(userChoice);
+                        $("#cchoice").text(computerChoice);
+                        $("#won").text("You Won!");
+                } else {
+                        console.log("no conditions were true");
+                }
+                console.log(computerChoice, "computer choice");
+             
+        });
+});

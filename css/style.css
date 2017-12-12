@@ -42,8 +42,9 @@ html {
 .space {
     padding-top: 20px;
 }
-.name {
+.names {
     padding-left: 40px;
+    padding-top: 15px;
 }
 .won {
     padding-top: 50px;
