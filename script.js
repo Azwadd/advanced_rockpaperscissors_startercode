@@ -43,6 +43,10 @@ $(document).ready(function() {
                 $("#urock").css("background-color" , "#333333");
                 $("#upaper").css("background-color" , "#333333");
                 $("#uscissors").css("background-color" , "#333333");
+                $("#ulizard").css("background-color" , "#333333");
+                $("#uspock").css("background-color" , "#333333");
+                $("#clizard").css("background-color" , "#333333");
+                $("#cspock").css("background-color" , "#333333");
                 if (computerChoice === userChoice.toLowerCase()){
                         $("#uchoices").text(userChoice.toLowerCase());
                         $("#cchoice").text(computerChoice);
@@ -89,76 +93,104 @@ $(document).ready(function() {
                         $("#cresults").html(function(i, val) { return +val+1 ;});
                         $("#upaper").css("background-color" , "#daa520");
                         $("#cscissors").css("background-color" , "#daa520");
-                } else if (computerChoice === choices[3] && userChoice.toLowerCase() === choices [4]) {
+                } else if (computerChoice === choices[3] && userChoice.toLowerCase() === choices[4]) {
                         $("#uchoices").text(userChoice.toLowerCase());
                         $("#cchoice").text(computerChoice);
                         $("#won").text("You Lost!");
                         $("#cresults").html(function(i, val) { return +val+1 ;});
-                } else if (computerChoice === choices[3] && userChoice.toLowerCase() === choices [1]) {
+                        $("#clizard").css("background-color" , "#daa520");
+                        $("#uspock").css("background-color" , "#daa520");
+                } else if (computerChoice === choices[3] && userChoice.toLowerCase() === choices[1]) {
                         $("#uchoices").text(userChoice.toLowerCase());
                         $("#cchoice").text(computerChoice);
                         $("#won").text("You Lost!");
                         $("#cresults").html(function(i, val) { return +val+1 ;});
-                } else if (computerChoice === choices[4] && userChoice.toLowerCase() === choices [3]) {
+                        $("#clizard").css("background-color" , "#daa520");
+                        $("#upaper").css("background-color" , "#daa520");
+                } else if (computerChoice === choices[4] && userChoice.toLowerCase() === choices[3]) {
                         $("#uchoices").text(userChoice.toLowerCase());
                         $("#cchoice").text(computerChoice);
                         $("#won").text("You Lost!");
                         $("#cresults").html(function(i, val) { return +val+1 ;});
-                } else if (computerChoice === choices[4] && userChoice.toLowerCase() === choices [1]) {
+                        $("#cspock").css("background-color" , "#daa520");
+                        $("#ulizard").css("background-color" , "#daa520");
+                } else if (computerChoice === choices[4] && userChoice.toLowerCase() === choices[1]) {
                         $("#uchoices").text(userChoice.toLowerCase());
                         $("#cchoice").text(computerChoice);
                         $("#won").text("You Lost!");
                         $("#cresults").html(function(i, val) { return +val+1 ;});
+                        $("#cspock").css("background-color" , "#daa520");
+                        $("#upaper").css("background-color" , "#daa520");
                 } else if (computerChoice === choices[3] && userChoice.toLowerCase() === choices[2]){
                         $("#uchoices").text(userChoice.toLowerCase());
                         $("#cchoice").text(computerChoice);
                         $("#won").text("You Won");
+                        $("#clizard").css("background-color" , "#daa520");
+                        $("#uscissors").css("background-color" , "#daa520");
                         $("#uresults").html(function(i, val) { return +val+1 ;});
                 } else if (computerChoice === choices[3] && userChoice.toLowerCase() === choices[0]){
                         $("#uchoices").text(userChoice.toLowerCase());
                         $("#cchoice").text(computerChoice);
                         $("#won").text("You Won");
                         $("#uresults").html(function(i, val) { return +val+1 ;});
+                        $("#clizard").css("background-color" , "#daa520");
+                        $("#urock").css("background-color" , "#daa520");
                 } else if (computerChoice === choices[4] && userChoice.toLowerCase() === choices[2]){
                         $("#uchoices").text(userChoice.toLowerCase());
                         $("#cchoice").text(computerChoice);
                         $("#won").text("You Won");
                         $("#uresults").html(function(i, val) { return +val+1 ;});
+                        $("#cspock").css("background-color" , "#daa520");
+                        $("#uscissors").css("background-color" , "#daa520");
                 } else if (computerChoice === choices[4] && userChoice.toLowerCase() === choices[0]){
                         $("#uchoices").text(userChoice.toLowerCase());
                         $("#cchoice").text(computerChoice);
                         $("#won").text("You Won");
                         $("#uresults").html(function(i, val) { return +val+1 ;});
+                        $("#cspock").css("background-color" , "#daa520");
+                        $("#urock").css("background-color" , "#daa520");
                 } else if (computerChoice === choices[0] && userChoice.toLowerCase() === choices[3]){
                         $("#uchoices").text(userChoice.toLowerCase());
                         $("#cchoice").text(computerChoice);
                         $("#won").text("You Won");
                         $("#uresults").html(function(i, val) { return +val+1 ;});
+                        $("#crock").css("background-color" , "#daa520");
+                        $("#ulizard").css("background-color" , "#daa520");
                 } else if (computerChoice === choices[2] && userChoice.toLowerCase() === choices[3]){
                         $("#uchoices").text(userChoice.toLowerCase());
                         $("#cchoice").text(computerChoice);
                         $("#won").text("You Lost");
                         $("#cresults").html(function(i, val) { return +val+1 ;});
+                        $("#cscissors").css("background-color" , "#daa520");
+                        $("#ulizard").css("background-color" , "#daa520");
                 } else if (computerChoice === choices[1] && userChoice.toLowerCase() === choices[3]){
                         $("#uchoices").text(userChoice.toLowerCase());
                         $("#cchoice").text(computerChoice);
                         $("#won").text("You Won");
                         $("#uresults").html(function(i, val) { return +val+1 ;});
+                        $("#cpaper").css("background-color" , "#daa520");
+                        $("#ulizard").css("background-color" , "#daa520");
                 } else if (computerChoice === choices[0] && userChoice.toLowerCase() === choices[4]){
                         $("#uchoices").text(userChoice.toLowerCase());
                         $("#cchoice").text(computerChoice);
                         $("#won").text("You Won");
                         $("#uresults").html(function(i, val) { return +val+1 ;});
+                        $("#crock").css("background-color" , "#daa520");
+                        $("#uspock").css("background-color" , "#daa520");
                 } else if (computerChoice === choices[1] && userChoice.toLowerCase() === choices[4]){
                         $("#uchoices").text(userChoice.toLowerCase());
                         $("#cchoice").text(computerChoice);
                         $("#won").text("You Lost");
                         $("#uresults").html(function(i, val) { return +val+1 ;});
+                        $("#cpaper").css("background-color" , "#daa520");
+                        $("#uspock").css("background-color" , "#daa520");
                 } else if (computerChoice === choices[2] && userChoice.toLowerCase() === choices[4]){
                         $("#uchoices").text(userChoice.toLowerCase());
                         $("#cchoice").text(computerChoice);
                         $("#won").text("You Won");
                         $("#uresults").html(function(i, val) { return +val+1 ;});
+                        $("#cscissors").css("background-color" , "#daa520");
+                        $("#uspock").css("background-color" , "#daa520");
                 } else {
                         alert("Not Valid Input");
                         console.log("no conditions were true");

@@ -23,6 +23,7 @@ body {
 .instructions {
     color: white;
     padding-left: 9%;
+    text-align: center;
 }
 .details {
     color: white;
@@ -38,7 +39,7 @@ body {
     color: white;
      font-weight: bold;
 }
-.rock , .scissors , .paper {
+.rock , .scissors , .paper , .spock , .lizard {
     padding: 8% 8% 8% 8%
 }
 .words {
