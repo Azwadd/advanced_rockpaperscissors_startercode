@@ -14,96 +14,161 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
-<body class="color">
-  <h1 id="header">The RPS Game</h1>
+
+<body>
+  <h1 class="header">The RPS Game</h1>
   <div class="container">
-    <div class="row">
-      <div class="col-lg-4">
-        <img src="rockpaperscissors.jpg" class="img">
+    <div class="row bkgcolor">
+      <div class="col-lg-3">
+        <img src="rps.png" class="rounded img-responsive mainImg">
       </div>
-      <div class="col-lg-4">
-        <ol>
+      <div class="col-lg-6">
+        <p class="welcome">Welcome to the Rock, Paper, Scissors, Lizard and Spock Game!</p>
+        <p class="instructions">Instructions</p>
+        <ul class="details">
           <li>
-            <p>Welcome and enjoy playing Rock, Paper, Scissors</p>
+            <p>Type in your Name and press submit!</p>
           </li>
           <li>
-            <p>Fill in your Name and Submit!</p>
+            <p>Then either type in Rock, Paper, Scissors, Lizard or Spock and Submit!</p>
           </li>
           <li>
-            <p>Then either type in Rock, Paper or Scissors and Submit!</p>
+            <p>Good Luck and Have Fun!</p>
           </li>
-          <li>
-            <p>Good Luck agaisnt the Computer!</p>
-          </li>
-        </ol>
+        </ul>
       </div>
-      <div class="col-lg-4">
-        <img src="rockpaperscissorsimage.jpg" class="image">
-      </div>
+      <div class="col-lg-3"></div>
     </div>
-    <div class="row">
-      <div class="col-lg-2"></div>
-      <div class="col-lg-4 value1">
+    <div class="row spacing">
+      <div class="col-lg-12"></div>
+    </div>
+    <div class="row bkgcolor input">
+      <div class="col-lg-4">
         <form class="names">
           <input type="text" id="name" placeholder="Name">
           <button id="nameVal">Submit</button>
         </form>
-        </div>
-      <div class="col-lg-4 value2">
+      </div>
+      <div class="col-lg-4">
         <form class="names">
-          <input type="text" id="userValue" placeholder="Rock Or Paper Or Scissors">
-          <button id="submitValue">Submit</button> 
+          <input type="text" id="userValue" placeholder="Rock/Paper/Scissors/Lizard/Spock">
+          <button id="submitValue">Submit</button>
         </form>
+      </div>
+      <div class="col-lg-4">
+        <p class="luck">Submit If You Dare To Challenge The Computer</p>
+      </div>
+    </div>
+    <div class="row spacing">
+      <div class="col-lg-12"></div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="floated-imgs bkgcolor uimages">
+          <div id="urock">
+            <img src="rock.jpeg" class="rock img-responsive">
+          </div>
+          <div id="upaper">
+            <img src="paper.jpg" class="paper img-responsive">
+          </div>
+          <div id="uscissors">
+            <img src="scissors.jpg" class="scissors img-responsive">
+          </div>
         </div>
-      <div class="col-lg-2"></div>
+      </div>
+      <div class="col-lg-2 words">
+        <table class="bkgcolor">
+          <tr>
+            <th id="nameValue" class="box">The User's Choices</th>
+          </tr>
+          <tr>
+            <td class="slot"></td>
+          </tr>
+          <tr>
+            <td id="uchoices" class="box">???</td>
+          </tr>
+          <tr>
+            <td class="slot"></td>
+          </tr>
+        </table>
+        <div class="table"></div>
+        <table class="bkgcolor">
+          <tr>
+            <th class="box">The User's Total Wins</th>
+          </tr>
+          <tr>
+            <td class="slot"></td>
+          </tr>
+          <tr>
+            <td id="uresults" class="box">0</td>
+          </tr>
+          <tr>
+            <td class="slot"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-lg-2 secondary">
+        <table class="bkgcolor">
+          <tr>
+            <th class="wintable">The Winner's Table</th>
+          </tr>
+          <tr>
+            <td class="slot"></td>
+          </tr>
+          <tr>
+            <td id="won">?!?!?</td>
+          </tr>
+          <tr>
+            <td class="slot"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-lg-2 words">
+        <table class="bkgcolor">
+          <tr>
+            <th class="box">Computer's Choice</th>
+          </tr>
+          <tr>
+            <td class="slot"></td>
+          </tr>
+          <tr>
+            <td id="cchoice" class="box">???</td>
+          </tr>
+          <tr>
+            <td class="slot"></td>
+          </tr>
+        </table>
+        <div class="table"></div>
+        <table class="bkgcolor">
+          <tr>
+            <th class="box">Total Computer Wins</th>
+          </tr>
+          <tr>
+            <td class="slot"></td>
+          </tr>
+          <tr>
+            <td id="cresults" class="box">0</td>
+          </tr>
+          <tr>
+            <td class="slot"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-lg-3">
+        <div class="floated-imgs bkgcolor cimages">
+          <div id="crock">
+            <img src="rock.jpeg" class="rock img-responsive">
+          </div>
+          <div id="cpaper">
+            <img src="paper.jpg" class="paper img-responsive">
+          </div>
+          <div id="cscissors">
+            <img src="scissors.jpg" class="scissors img-responsive">
+          </div>
+        </div>
+      </div>
     </div>
-    <div class= "row">
-      <div class="col-lg-4 item1">
-        <p>Pick Rock</p>
-      </div>
-      <div class="col-lg-4 item2">
-        <p>Pick Paper</p>
-      </div>
-      <div class="col-lg-4 item3">
-        <p>Pick Scissors</p>
-      </div>
-    </div>
-    <div class= "row">
-      <div class="col-lg-4">
-        <img src="rock.jpg" class="rock"> 
-      </div>
-      <div class="col-lg-4">
-        <img src="paper.jpg" class="paper">
-      </div>
-      <div class="col-lg-4">
-        <img src="scissor.png" class="scissors">
-      </div>
-    </div>
-    <div class="row space">
-      <div class="col-lg-4 words">
-      <p id="nameValue">User's Choice</p>
-      <p id="uchoices"> </p>
-        <p id="results">User Won ... Times</p>
-      </div>
-      <div class="col-lg-4">
-        <p id="won"> </p>
-      </div>
-      <div class="col-lg-4">
-        <p>Computer's Choice</p>
-        <p id="cchoice"> </p>
-        <p id="results">Computer Won ... Times</p>
-      </div>
-      
-    </div>
-      
   </div>
-    <!-- TASK 1: In the div below. 
-        2. In a paragraph tag, add instructions on how to play the game.
-        3. Add a RPS image.
-        4. Add input box and button .
-        5. Add divs to record User Choice and Computer Choice.
-        6. Add a div to record the Winner.
-     -->
 </body>
 
 </html>

@@ -1,66 +1,75 @@
-html {
-    background-color: orange;
+body {
+    background-color: #899bc1 !important;
 }
-#header {
+.header {
+    color: white;
     font-style: italic;
     font-weight: bold;
-    text-align: center;
-    background-color: orange;
-}
-.color {
-    background-color: orange;
-    width: 100%;
-}
-.item1 {
-    text-align: right;
-    font-weight: bold;
-}
-.item2 {
-    text-align: center;
-    font-weight: bold;
-}
-.item3{
     text-align: left;
-    font-weight: bold;
+    background-color: #1a1a1a;
 }
-.rock {
-    height: 100px;
-    width: 160px;
-    float: right;
+.bkgcolor {
+    background-color: #333333;
 }
-.paper {
-    height: 100px;
-    width: 160px;
-    margin-left: 100px;
+.mainImg {
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
-.scissors {
-    height: 100px;
-    width: 160px;
-    float: left;
-    background-color: white;
+.welcome {
+    color: white;
+    font-style: italic;
+    padding-left: 8%;
 }
-.space {
-    padding-top: 20px;
+.instructions {
+    color: white;
+    padding-left: 9%;
 }
-.names {
-    padding-left: 40px;
-    padding-top: 15px;
+.details {
+    color: white;
 }
-.won {
-    padding-top: 50px;
-    text-align: center;
+.spacing {
+    padding-top: 2%;
 }
-.img {
-    height: 200px;
-    width: 400px;
+.input {
+    padding-top: 2.5%;
+    padding-bottom: 1.5%;
 }
-.image {
-    height: 200px;
-    width: 400px;
+.luck {
+    color: white;
+     font-weight: bold;
+}
+.rock , .scissors , .paper {
+    padding: 8% 8% 8% 8%
 }
 .words {
-    text-align: right;
+    padding-top: 15%;
+    color: white;
 }
-.results {
-    margin-top: 20px;
+.table {
+    padding-top: 60%;
+    padding-bottom: 40%;
+}
+table {
+    table-layout: fixed;
+    min-width: 90%;
+}
+td , th {
+    border: 1px solid red;
+}
+.wintable {
+    text-align: center;
+}
+.slot {
+    text-align: center;
+    background-color: #A9A9A9;
+    padding-top: 25%;
+}
+.box {
+    padding-top: 7%;
+    text-align: center;
+}
+.secondary {
+    padding-top: 30%;
+    color: white;
+    text-align: center;
 }
